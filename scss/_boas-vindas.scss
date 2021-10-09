@@ -1,0 +1,122 @@
+.boas-vindas {
+    height: 85%;
+    position: relative;
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        @include flx(align-items, center);
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__banner {
+        width: 100%;
+        height: 70%;
+        background: linear-gradient(rgba(245, 219, 89, 0.3), rgba(5, 117, 73, 0.3)), url(./../img/banner.png) no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+    &__btns {
+        width: 50%;
+        height: 25%;
+        @include flx(justify-content, space-around);
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__input-link {
+        width: 45%;
+        @include flx(justify-content, space-around);
+        align-items: center;
+        flex-direction: column;
+        background: $primaria;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px grey;
+        padding: 15px 0;
+        @extend %no-decoration;
+        transition: 0.5s all;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            @include font-size(20px);
+        }
+    }
+
+    &__input {
+        background: none;
+        border: 0;
+        color: $white;
+        @include font-size (18px);
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px grey;
+        @extend %default-margin-top;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__btn-img {
+        width: 15%;
+    }
+
+    &__btns-rh {
+        width: 80%;
+        height: 25%;
+        @include flx(justify-content, space-around);
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__input-link-rh {
+        width: 22%;
+        @include flx(justify-content, space-around);
+        align-items: center;
+        flex-direction: column;
+        background: $primaria;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px grey;
+        padding: 15px 0;
+        @extend %no-decoration;
+        transition: 0.5s all;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            @include font-size(20px);
+        }
+    }
+
+    &__input {
+        background: none;
+        border: 0;
+        color: $white;
+        @include font-size (18px);
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px grey;
+        @extend %default-margin-top;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__btn-img-rh {
+        width: 20%;
+    }
+}

@@ -1,0 +1,26 @@
+.footer {
+    background-color: $primaria;
+    font-family: $font-family-default;
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    @include flx(justify-content, center);
+    align-items: center;
+    flex-direction: column;
+    color: $white;
+
+    &__text {
+        padding: 5px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        @include font-size(14px);
+    }
+
+    @include for-mobile-only {
+        &__text {
+            width: 80%;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}

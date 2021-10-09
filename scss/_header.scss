@@ -1,0 +1,150 @@
+.header {
+    @include flx(justify-content, space-between);
+    align-items: center;
+    color: $white;
+    height: 10%;
+    background-color: $primaria;
+
+    &__index {
+        justify-content: center;
+    }
+
+    &__logo {
+        @include flx(justify-content, center);
+        align-items: center;
+        width: 10%;
+        @extend %double-margin-left;
+
+        @include for-mobile-only {
+            width: 30%;
+            margin-left: 5px;
+        }
+    }
+
+    &__logo-img {
+        width: 100%;
+    }
+
+    &__txt {
+        font-family: 'Clicker Script', cursive;
+        @include font-size(50px);
+
+        @include for-mobile-only {
+            font-size: 25px;
+        }
+    }
+
+    &__user {
+        @include flx(justify-content, flex-start);
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        @extend %double-margin-right;
+
+        @include for-mobile-only {
+            width: 60%;
+            flex-direction: row-reverse;
+            margin-right: 5px;
+        }
+    }
+    
+    &__user-img {
+        width: 100%;
+    }
+
+    &__user-txt {
+        font-family: $font-family-default;
+        @include font-size (16px);
+        @extend %default-margin-left;
+        letter-spacing: 1px;
+
+        @include for-mobile-only {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+
+    &__menu {
+        @include flx(align-items, center);
+        justify-content: space-between;
+        height: 100%;
+        font-family: $font-family-default;
+        letter-spacing: 1px;
+    }
+
+    &__lista {
+        @include flx(justify-content, space-between);
+        align-items: center;
+        height: 100%;
+
+        @include for-mobile-only {
+            display: none;
+        }
+    }
+
+    &__nav {
+        height: 100%;
+        @include flx(justify-content, space-between);
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    &__dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__links {
+        display: block;
+        color: $white;
+        @extend %no-decoration;
+        transition: 0.5s all;
+        cursor: pointer;
+
+        &:hover {
+            color: $terciaria;
+            @extend %u-decoration;
+        }
+    }
+
+    &__submenu {
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 1;
+    }
+    
+    &__submenu-img {
+        margin-top: 2%;
+    }
+
+    &__submenu-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 1%;
+    }
+
+    &__mes {
+        padding: 10px 20px;
+        background-color: #3a3a3a99;
+    }
+
+    &__mes-link {
+        color: $white;
+        @extend %no-decoration;
+
+        &:hover {
+            @extend %u-decoration;
+            color: $terciaria;
+        }
+    }
+
+    &__ativo {
+        color: $terciaria;
+        @extend %u-decoration;
+    }
+}
+
+.show {
+    display: block;
+}

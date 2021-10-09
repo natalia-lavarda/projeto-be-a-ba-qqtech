@@ -1,0 +1,74 @@
+.cadastrar-funcionarios {
+    width: 100%;
+    height: 85%;
+    margin: auto;
+    font-family: $font-family-default;
+    color: $primaria;
+    font-weight: 500;
+
+    &__container {
+        @include flx(justify-content, space-around);
+        align-items: center;
+        height: 100%;
+        margin: auto;
+    }
+
+    &__img {
+        width: 30%;
+        margin-left: 15%;
+    }
+
+    &__card-img {
+        width: 100%;
+    }
+
+    &__area-form {
+        width: 20%;
+        height: 80%;
+        @include flx(justify-content, space-around);    
+        flex-direction: column;
+        margin-right: 15%;
+    }
+
+    &__form {
+        @include flx(justify-content, space-around);    
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__input {
+        border: 0;
+        border-bottom: 1px solid $secundaria;
+        outline: 0;
+        @include font-size(15px);
+        letter-spacing: 1px;
+
+        &::placeholder {
+            @include font-size(15px);
+        }
+    }
+
+    &__area-btn {
+        @include flx(justify-content, center);
+        @extend %double-margin-top;
+    }
+
+    &__btn {
+        background-color: $primaria;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px #534f4f;
+        color: $white;
+        border: 0;
+        padding: 10px 25px;
+        box-shadow: 1px 1px 2px $secundaria;
+        transition: 0.5s all;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

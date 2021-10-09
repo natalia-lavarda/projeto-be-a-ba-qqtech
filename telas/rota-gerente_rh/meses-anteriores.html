@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero-Ponto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/img/logo qq.png" alt="Logo Quero-Quero">
+        </div>
+        <div class="header__menu header__dropdown">
+            <ul class="header__lista">
+                <li class="header__nav"><a href="./boas-vindas-rh.html" class="header__links" data-aba>Home</a></li>
+                <li class="header__nav"><a href="./registrar-ponto.html" class="header__links" data-aba>Registrar
+                        ponto</a></li>
+                <li class="header__nav"><a href="#" onclick="mostrarMes()" class="header__links header__dropbtn"
+                        data-aba>Meus registros</a>
+                    <ul id="header__menu-dropDown" class="header__submenu">
+                        <img class="header__submenu-img" src="/img/down.png"
+                            alt="Ícone de seta amarela apontando para baixo">
+                        <div class="header__submenu-grid">
+                            <li class="header__mes"><a class="header__mes-link" href="#">Janeiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Abril</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Julho</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Outubro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Fevereiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Maio</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Agosto</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Novembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Março</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Junho</a></li>
+                            <li class="header__mes"><a class="header__mes-link"
+                                    href="./meus-registros.html">Setembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Dezembro</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__nav"><a href="./cadastrar-funcionarios.html" class="header__links" data-aba>Cadastrar
+                        funcionários</a></li>
+                <li class="header__nav"><a href="./meses-anteriores.html" class="header__links header__ativo"
+                        data-aba>Meu time</a></li>
+            </ul>
+        </div>
+        <div class="header__user">
+            <div class="header__user-conteudo">
+                <img class="header__user-img" src="/img/usuario.png" alt="Imagem de silhueta de usuário">
+            </div>
+            <div class="header__user-txt">
+                <h3 class="name">Andréia Castilho Vieira</h3>
+            </div>
+        </div>
+    </header>
+    <main class="meses-anteriores">
+        <section class="meses-anteriores__container">
+            <div class="meses-anteriores__banner"></div>
+            <div class="meses-anteriores__titulo">
+                <h1 class="meses-anteriores__txt">Meses anteriores</h1>
+            </div>
+            <div class="meses-anteriores__cabecalho">
+                <div class="meses-anteriores__dados">
+                    <h1 class="meses-anteriores__dados-titulo">Nome</h1>
+                    <p class="meses-anteriores__dado">Gabriel Bueno Martins</p>
+                </div>
+                <div class="meses-anteriores__dados">
+                    <h1 class="meses-anteriores__dados-titulo">Matrícula</h1>
+                    <p class="meses-anteriores__dado">970568</p>
+                </div>
+            </div>
+            <div class="meses-anteriores__borda-tabela">
+                <table class="meses-anteriores__tabela">
+                    <tr class="meses-anteriores__tr">
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/jan.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/fev.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/mar.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/abr.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/mai.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/jun.png" alt="Calendário mês janeiro"></a></td>
+                    </tr>
+                    <tr class="meses-anteriores__tr">
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/jul.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/ago.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="./registros-funcionarios.html"><img
+                                    class="meses-anteriores__img" src="/img/set.png" alt="Calendário mês janeiro"></a>
+                        </td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/out.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/nov.png" alt="Calendário mês janeiro"></a></td>
+                        <td class="meses-anteriores__td"><a href="#"><img class="meses-anteriores__img"
+                                    src="/img/dez.png" alt="Calendário mês janeiro"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Site desenvolvido por Natália Lavarda - Estagiária Quero-Quero Tech | © Copyright 2021
+        </p>
+    </footer>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/header-dropdown.js"></script>
+</body>
+
+</html>

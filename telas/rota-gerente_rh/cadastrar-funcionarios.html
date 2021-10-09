@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero-Ponto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/img/logo qq.png" alt="Logo Quero-Quero">
+        </div>
+        <div class="header__menu header__dropdown">
+            <ul class="header__lista">
+                <li class="header__nav"><a href="./boas-vindas-rh.html" class="header__links" data-aba>Home</a></li>
+                <li class="header__nav"><a href="./registrar-ponto.html" class="header__links" data-aba>Registrar ponto</a></li>
+                <li class="header__nav"><a href="#" onclick="mostrarMes()" class="header__links header__dropbtn" data-aba>Meus registros</a>
+                    <ul id="header__menu-dropDown" class="header__submenu">
+                        <img class="header__submenu-img" src="/img/down.png" alt="Ícone de seta amarela apontando para baixo">
+                        <div class="header__submenu-grid">
+                            <li class="header__mes"><a class="header__mes-link" href="#">Janeiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Abril</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Julho</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Outubro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Fevereiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Maio</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Agosto</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Novembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Março</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Junho</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="./meus-registros.html">Setembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Dezembro</a></li>
+                        </div>
+                    </ul>
+                </li>                
+                <li class="header__nav"><a href="./cadastrar-funcionarios.html" class="header__links  header__ativo" data-aba>Cadastrar funcionários</a></li>
+                <li class="header__nav"><a href="./meu-time.html" class="header__links" data-aba>Meu time</a></li>
+            </ul>
+        </div>
+        <div class="header__user">
+            <div class="header__user-conteudo">
+                <img class="header__user-img" src="/img/usuario.png" alt="Imagem de silhueta de usuário">
+            </div>
+            <div class="header__user-txt">
+                <h3 class="name">Andréia Castilho Vieira</h3>
+            </div>
+        </div>
+    </header>
+    <main class="cadastrar-funcionarios">
+        <section class="cadastrar-funcionarios__container">
+            <div class="cadastrar-funcionarios__img">
+                <img src="/img/colegas.png" alt="Ilustração de colegas de trabalho" class="cadastrar-funcionarios__card-img">
+            </div>
+            <div class="cadastrar-funcionarios__area-form">
+                <form class="cadastrar-funcionarios__form" data-form>
+                    <label for="nome" class="cadastrar-funcionarios__label">Nome completo</label>
+                    <input type="text" class="cadastrar-funcionarios__input" placeholder="Nome completo">
+                    <label for="cpf" class="cadastrar-funcionarios__label">CPF</label>
+                    <input type="text" class="cadastrar-funcionarios__input" placeholder="xxx.xxx.xxx-xx">
+                    <label for="funcao" class="cadastrar-funcionarios__label">Função</label>
+                    <input type="text" class="cadastrar-funcionarios__input" placeholder="Função">
+                    <label for="matricula" class="cadastrar-funcionarios__label">Matrícula</label>
+                    <input type="text" class="cadastrar-funcionarios__input" placeholder="Matrícula">
+                    <label for="senha" class="cadastrar-funcionarios__label">Senha</label>
+                    <input type="password" class="cadastrar-funcionarios__input" placeholder="Senha">
+                </form>
+                <div class="cadastrar-funcionarios__area-btn">
+                    <input data-btn type="submit" value="Cadastrar" class="cadastrar-funcionarios__btn">
+                </div>
+                <div id="registrar-ponto__dv-modal" class="registrar-ponto__modal" data-modal>
+                    <div class="registrar-ponto__modal-content">
+                        <div class="registrar-ponto__modal-close">
+                            <button class="registrar-ponto__btn-close" data-close>x</button>
+                        </div>
+                        <div class="registrar-ponto__check">
+                            <img src="/img/check.png" alt="" class="registrar-ponto__check-img">
+                        </div>
+                        <div class="registrar-ponto__modal-txt">
+                            <h1>Cadastro realizado com sucesso : )</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Site desenvolvido por Natália Lavarda - Estagiária Quero-Quero Tech | © Copyright 2021
+        </p>
+    </footer>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/header-dropdown.js"></script>
+</body>
+
+</html>

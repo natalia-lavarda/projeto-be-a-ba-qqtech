@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero-Ponto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header header__index">
+        <div class="header__txt">
+            <p class="header__txt-p">Desejamos que você tenha um ótimo turno!</p>
+        </div>
+    </header>
+    <main class="main">
+        <figure class="main__welcome">
+            <img src="/img/compromisso.svg" alt="Menina agendando compromissos" class="main__imagem">
+        </figure>
+        <section class="main__login">
+            <div class="main__conteudo">
+                <figure class="main__logo">
+                    <img class="main__logo-qq" src="/img/logo qq.png" alt="Logo lojas Quero-Quero">
+                </figure>
+                <div class="main__btns-escolha">
+                    <button class="main__btn-escolha main__ativo-index" data-aba="colaborador"> Sou colaborador</button>
+                    <button class="main__btn-escolha" data-aba="rh"> Sou gerente de RH</button>
+                </div>
+                <form class="main__formulario">
+                    <fieldset class="main__fieldset">
+                        <legend class="main__legenda">
+                            <p>Insira seu <span style="font-weight: 600;">login</span> e <span
+                                    style="font-weight: 600;">senha</span> para acessar seu sistema de controle de
+                                ponto:</p>
+                        </legend>
+                        <div class="main__inputs">
+                            <label class="main__label" for="matricula">Matrícula</label>
+                            <input class="main__input" type="text" name="matricula" id="matricula"
+                                placeholder="Matricula">
+                        </div>
+                        <div class="main__inputs">
+                            <label class="main__label" for="senha">Senha</label>
+                            <input class="main__input" type="password" name="senha" id="senha" placeholder="Senha">
+                        </div>
+                        <div class="main__btn">
+                            <!-- Aqui troquei o input para um link somente para mostrar a rota durante a apresentação -->
+                            <a  class="main__btn-input"href="./boas-vindas-colaborador.html">ENTRAR</a>
+                            <!-- <input class="main__btn-input" id="submit" type="submit" value="Entrar"> -->
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="main__ajuda">
+                    <button class="main__btn-ajuda" data-btn>Precisa de ajuda?</button>
+                </div>
+                <div id="main__dv-modal" class="main__modal" data-modal>
+                    <div class="main__modal-content">
+                        <div class="main__modal-close">
+                            <button class="main__btn-close" data-close>x</button>
+                        </div>
+                        <div class="main__question">
+                            <img src="/img/question.svg" alt="Ilustração de menina com lanterna e símbolo de dúvida" class="main__question-img">
+                        </div>
+                        <div class="main__modal-txt">
+                            <p class="main__modal-p">
+                                Colaborador(a), caso tenha problemas para realizar o login, entre em contato diretamente com o seu gestor.</p>
+                            <p>Caso seja algum problema técnico na aplicação, por favor, entre em contato com nosso suporte: <strong class="main__modal-strong">51 3265.7731</strong></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Site desenvolvido por Natália Lavarda - Estagiária Quero-Quero Tech | © Copyright 2021
+        </p>
+    </footer>
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>

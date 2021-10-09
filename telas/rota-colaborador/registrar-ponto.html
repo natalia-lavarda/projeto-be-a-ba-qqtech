@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero-Ponto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/img/logo qq.png" alt="Logo Quero-Quero">
+        </div>
+        <nav class="header__menu header__dropdown">
+            <ul class="header__lista">
+                <li class="header__nav"><a href="./boas-vindas-colaborador.html" class="header__links" data-aba>Home</a>
+                </li>
+                <li class="header__nav"><a href="./registrar-ponto.html" class="header__links header__ativo"
+                        data-aba>Registrar ponto</a></li>
+                <li class="header__nav"><a href="#" onclick="mostrarMes()" class="header__links header__dropbtn"
+                        data-aba>Meus registros</a>
+                    <ul id="header__menu-dropDown" class="header__submenu">
+                        <img class="header__submenu-img" src="/img/down.png"
+                            alt="Ícone de seta amarela apontando para baixo">
+                        <div class="header__submenu-grid">
+                            <li class="header__mes"><a class="header__mes-link" href="#">Janeiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Abril</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Julho</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Outubro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Fevereiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Maio</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Agosto</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Novembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Março</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Junho</a></li>
+                            <li class="header__mes"><a class="header__mes-link"
+                                    href="./meus-registros.html">Setembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Dezembro</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__user">
+            <div class="header__user-conteudo">
+                <img class="header__user-img" src="/img/usuario.png" alt="Imagem de silhueta de usuário">
+            </div>
+            <div class="header__user-txt">
+                <h3 class="name">Gabriel Bueno Martins</h3>
+            </div>
+        </div>
+    </header>
+    <main class="registrar-ponto">
+        <section class="registrar-ponto__container">
+            <div class="registrar-ponto__card">
+                <div class="registrar-ponto__img">
+                    <img src="/img/registrar img.png" alt="Ilustração mulher e folha" class="registrar-ponto__card-img">
+                </div>
+                <div class="registrar-ponto__orientacoes">
+                    <div class="registrar-ponto__clock">
+                        <section class="clock-container" data-clock></section>
+                    </div>
+                    <div class="registrar-ponto__alert">
+                        <img src="/img/warning.png" alt="Imagem de alerta em tela de computador"
+                            class="registrar-ponto__alert-img">
+                    </div>
+                    <div class="registrar-ponto__orientacoes-txt">
+                        <p class="registrar-ponto__paragrafo">Colaborador(a), lembre-se que você pode editar seus
+                            registros caso cometa algum erro.</p>
+                        <p class="registrar-ponto__paragrafo">Lembre-se também que você deve colocar a numeração de suas
+                            entradas e saídas, por exemplo: se sua entrada da manhã for a primeira do dia,<strong
+                                class="registrar-ponto__strong"> o tipo de registro será entrada 1.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="registrar-ponto__area-form">
+                <form class="registrar-ponto__form" data-form>
+                    <label class="registrar-ponto__label" for="data-registro">Data:</label>
+                    <input class="registrar-ponto__input" type="date" name="data-registro" id="data-registro" required>
+                    <label class="registrar-ponto__label" for="horario-registro">Horário:</label>
+                    <input class="registrar-ponto__input" type="time" name="horario-registro" id="horario-registro"
+                        required>
+                    <label class="registrar-ponto__label">Tipo registro:</label>
+                    <div class="registrar-ponto__area-tipo">
+                        <input type="radio" name="tipo-registro" id="entrada" value="entrada" required><label
+                            class="registrar-ponto__label-area" for="entrada">Entrada</label>
+                        <input type="radio" name="tipo-registro" id="saida" value="saida" required><label
+                            class="registrar-ponto__label-area" for="saida">Saída</label>
+                        <input class="registrar-ponto__number" type="number" name="tipo-registro" id="numero-registro"
+                            value="numero-registro" min="1" max="10" required>
+                    </div>
+                    <label class="registrar-ponto__label" for="observacoes">Observações:</label>
+                    <textarea class="registrar-ponto__textarea" id="observacoes" name="observacoes"
+                        placeholder="Observações"></textarea>
+                </form>
+                <div class="registrar-ponto__area-btn">
+                    <input class="registrar-ponto__btn" type="submit" value="Registrar ponto" data-btn>
+                </div>
+                <div id="registrar-ponto__dv-modal" class="registrar-ponto__modal" data-modal>
+                    <div class="registrar-ponto__modal-content">
+                        <div class="registrar-ponto__modal-close">
+                            <button class="registrar-ponto__btn-close" data-close>x</button>
+                        </div>
+                        <div class="registrar-ponto__check">
+                            <img src="/img/check.png" alt="Ilustração de confirmação check"
+                                class="registrar-ponto__check-img">
+                        </div>
+                        <div class="registrar-ponto__modal-txt">
+                            <h1>Registro realizado com sucesso : )</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Site desenvolvido por Natália Lavarda - Estagiária Quero-Quero Tech | © Copyright 2021
+        </p>
+    </footer>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/clock.js"></script>
+    <script type="text/javascript" src="/js/header-dropdown.js"></script>
+</body>
+
+</html>

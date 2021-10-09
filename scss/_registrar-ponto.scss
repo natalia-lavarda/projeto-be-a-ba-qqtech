@@ -1,0 +1,301 @@
+.registrar-ponto {
+    width: 100%;
+    height: 85%;
+    font-family: $font-family-default;
+
+    &__modal {
+        background-color: rgba(0, 0, 0, .8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        z-index: 99;
+    }
+
+    &__modal-content {
+        background-color: $quaternaria;
+        margin: 0 auto;
+        margin-top: 10%;
+        width: 30%;
+        height: 40%;
+        padding: 30px;
+        box-shadow: 1px 1px 2px #1b1b1b;
+        @include flx(justify-content, space-around);
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        @include for-mobile-only {
+            width: 70%;
+            margin-top: 40%;
+        }
+    }
+
+    &__modal-close {
+        position: absolute;
+        margin-left: 90%;
+        margin-bottom: 55%;
+
+        @include for-mobile-only {
+            margin-bottom: 85%;
+            margin-left: 85%;
+        }
+    }
+
+    &__btn-close {
+        background-color: $quaternaria;
+        border: none;
+        @include font-size(25px);
+        font-weight: 600;
+        cursor: pointer;
+        color: $white;
+        transition: 0.5s all;
+
+        &:hover {
+            color: $terciaria;
+        }
+    }
+
+    &__check {
+        width: 30%;
+
+        @include for-mobile-only {
+            width: 45%;
+        }
+    }
+
+    &__check-img {
+        width: 100%;
+    }
+
+    &__modal-txt {
+        @include font-size(20px);
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $white;
+        text-shadow: 1px 1px 2px #1b1b1b;
+
+        @include for-mobile-only {
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+
+    &__container {
+        @include flx(justify-content, space-around);
+        align-items: center;
+        height: 100%;
+        margin: auto;
+
+        @include for-mobile-only {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        @include flx(justify-content, center);
+        align-items: center;
+        width: 40%;
+        height: 80%;
+        margin-left: 200px;
+
+        @include for-mobile-only {
+            margin: 12% auto 0 auto;
+            height: 20%;
+            width: 70%;
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        width: 60%;
+        z-index: 2;
+
+        @include for-mobile-only {
+            position: absolute;
+            width: 15%;
+            margin-bottom: 35%;
+            margin-right: 50%;
+        }
+    }
+
+    &__card-img {
+        width: 100%;
+        @extend %default-margin-left;
+    }
+
+    &__orientacoes {
+        @include flx(justify-content, center);
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+        
+        @include for-mobile-only {
+            width: 100%;
+            text-align: center;
+            margin-top: 10%;
+        }
+    }
+
+    &__clock {
+        @include font-size(40px);
+        margin-bottom: 50px;
+        color: $primaria;
+        font-weight: 600;
+        text-shadow: 1px 1px 2px $secundaria;
+        letter-spacing: -2px;
+
+        @include for-mobile-only {
+            font-size: 30px;
+            margin-bottom: 0px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__alert {
+        width: 30%;
+        position: absolute;
+        margin-bottom: 150px;
+
+        @include for-mobile-only {
+            display: none;
+        }
+    }
+
+    &__alert-img {
+        width: 100%;
+    }
+
+    &__orientacoes-txt {
+        @include flx(justify-content, flex-end);
+        @include font-size(14px);
+        color: $secundaria;
+        flex-direction: column;
+        height: 45%;
+        background-color: $terciaria;
+        box-shadow: 1px 1px 2px #525200;
+        margin-top: 10px;
+        padding: 10px;
+
+        @include for-mobile-only {
+            height: 100%;
+            margin: 0;
+        }
+    }
+
+    &__paragrafo {
+        margin-bottom: 15px;
+        text-align: justify;
+
+        @include for-mobile-only {
+            margin: 0;
+        }
+    }
+
+    &__strong {
+        font-weight: 500;
+    }
+
+    &__area-form {
+        width: 20%;
+        height: 80%;
+        margin-right: 210px;
+        @include flx(align-items, center);
+        flex-direction: column;
+
+        @include for-mobile-only {
+            width: 60%;
+            margin: 0;
+            margin-top: 10%;
+        }
+    }
+
+    &__form {
+        @include flx(justify-content, space-around);
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: $secundaria;
+        font-weight: 500;
+
+        @include for-mobile-only {
+            width: 100%;
+            height: 80%;
+            margin: 0;
+        }
+    }
+
+    &__input {
+        height: 5%;
+        padding: 5px;
+        border: 1px solid $primaria;
+        outline: 0;
+        font-family: $font-family-default;
+        color: $secundaria;
+        @include font-size(16px);
+    }
+
+    &__area-tipo {
+        border: 1px solid $primaria;
+        padding: 20px 10px;
+    }
+
+    &__label {
+        @include flx(justify-content, space-between);
+        align-items: center;
+    }
+
+    &__label-area {
+        @extend %half-margin-left;
+    }
+
+    &__number {
+        width: 18%;
+        @extend %default-margin-left;
+        outline: 0;
+    }
+
+    &__textarea {
+        border: 1px solid $primaria;
+        resize: none;
+        height: 15%;
+        outline: 0;
+        font-family: $font-family-default;
+        color: $secundaria;
+
+        &::placeholder {
+            font-family: $font-family-default;
+            @include font-size(16px);
+            padding: 5px;
+        }
+    }
+
+    &__area-btn {
+        text-align: center;
+    }
+
+    &__btn {
+        background-color: $primaria;
+        @include font-size(14px);
+        color: $white;
+        letter-spacing: 1px;
+        border: 0;
+        padding: 10px 20px;
+        border-radius: 0;
+        @extend %default-margin-top;
+        box-shadow: 1px 1px 2px $secundaria;
+        transition: 0.5s all;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            @include font-size(16px);
+        }
+    }
+}

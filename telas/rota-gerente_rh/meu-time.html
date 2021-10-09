@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero-Ponto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/img/logo qq.png" alt="Logo Quero-Quero">
+        </div>
+        <div class="header__menu header__dropdown">
+            <ul class="header__lista">
+                <li class="header__nav"><a href="./boas-vindas-rh.html" class="header__links" data-aba>Home</a></li>
+                <li class="header__nav"><a href="./registrar-ponto.html" class="header__links" data-aba>Registrar ponto</a></li>
+                <li class="header__nav"><a href="#" onclick="mostrarMes()" class="header__links header__dropbtn" data-aba>Meus registros</a>
+                    <ul id="header__menu-dropDown" class="header__submenu">
+                        <img class="header__submenu-img" src="/img/down.png" alt="Ícone de seta amarela apontando para baixo">
+                        <div class="header__submenu-grid">
+                            <li class="header__mes"><a class="header__mes-link" href="#">Janeiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Abril</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Julho</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Outubro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Fevereiro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Maio</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Agosto</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Novembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Março</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Junho</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="./meus-registros.html">Setembro</a></li>
+                            <li class="header__mes"><a class="header__mes-link" href="#">Dezembro</a></li>
+                        </div>
+                    </ul>
+                </li>                
+                <li class="header__nav"><a href="./cadastrar-funcionarios.html" class="header__links" data-aba>Cadastrar funcionários</a></li>
+                <li class="header__nav"><a href="./meu-time.html" class="header__links header__ativo" data-aba>Meu time</a></li>
+            </ul>
+        </div>
+        <div class="header__user">
+            <div class="header__user-conteudo">
+                <img class="header__user-img" src="/img/usuario.png" alt="Imagem de silhueta de usuário">
+            </div>
+            <div class="header__user-txt">
+                <h3 class="name">Andréia Castilho Vieira</h3>
+            </div>
+        </div>
+    </header>
+    <main class="meu-time">
+        <section class="meu-time__container">
+            <div class="meu-time__banner"></div>
+            <div class="meu-time__titulo">
+                <h1 class="meu-time__txt">Meu time</h1>
+            </div>
+            <div class="meu-time__borda-tabela">
+                <div class="meu-time__card">
+                    <p class="meu-time__card-txt">Clique para limitar o acesso do colaborador.</p>
+                </div>
+                <div class="meu-time__block">
+                    <img src="/img/click.png" alt="Ilustração de seta rosa" class="meu-time__block-img">
+                </div>
+                <table class="meu-time__tabela">
+                    <tr class="meu-time__tr">
+                        <th class="meu-time__th">Bloquear</th>
+                        <th class="meu-time__th">Colaborador</th>
+                        <th class="meu-time__th">Função</th>
+                        <th class="meu-time__th">Histórico</th>
+                    </tr>
+                    <tr class="meu-time__tr">
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/block.png"
+                                    alt="Símbolo de bloqueio"></a></td>
+                        <td class="meu-time__td">Gabriel Bueno Martins</td>
+                        <td class="meu-time__td">Assistente administrativo</td>
+                        <td class="meu-time__td meu-time__link"><a href="./registros-funcionarios.html"><img src="/img/new window.png"
+                                    alt="Símbolo nova janela"></a></td>
+                    </tr>
+                    <tr class="meu-time__tr">
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/block.png"
+                                    alt="Símbolo de bloqueio"></a></td>
+                        <td class="meu-time__td">Joana Torres Bittencourt</td>
+                        <td class="meu-time__td">Vendedora</td>
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/new window.png"
+                                    alt="Símbolo nova janela"></a></td>
+                    </tr>
+                    <tr class="meu-time__tr">
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/block.png"
+                                    alt="Símbolo de bloqueio"></a></td>
+                        <td class="meu-time__td">Flávia Maria Costa</td>
+                        <td class="meu-time__td">Auxiliar Contábil</td>
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/new window.png"
+                                    alt="Símbolo nova janela"></a></td>
+                    </tr>
+                    <tr class="meu-time__tr">
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/block.png"
+                                    alt="Símbolo de bloqueio"></a></td>
+                        <td class="meu-time__td">Jussara Pereira Lopes</td>
+                        <td class="meu-time__td">Analista Fiscal</td>
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/new window.png"
+                                    alt="Símbolo nova janela"></a></td>
+                    </tr>
+                    <tr class="meu-time__tr">
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/block.png"
+                                    alt="Símbolo de bloqueio"></a></td>
+                        <td class="meu-time__td">Neide da Silva Herman</td>
+                        <td class="meu-time__td">Vendedora</td>
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/new window.png"
+                                    alt="Símbolo nova janela"></a></td>
+                    </tr>
+                    <tr class="meu-time__tr">
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/block.png"
+                                    alt="Símbolo de bloqueio"></a></td>
+                        <td class="meu-time__td">Dirceu Carvalho</td>
+                        <td class="meu-time__td">Auxiliar de Departamento Pessoal</td>
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/new window.png"
+                                    alt="Símbolo nova janela"></a></td>
+                    </tr>
+                    <tr class="meu-time__tr">
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/block.png"
+                                    alt="Símbolo de bloqueio"></a></td>
+                        <td class="meu-time__td">Jéssica dos Reis</td>
+                        <td class="meu-time__td">Estoquista</td>
+                        <td class="meu-time__td meu-time__link"><a href="#"><img src="/img/new window.png"
+                                    alt="Símbolo nova janela"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Site desenvolvido por Natália Lavarda - Estagiária Quero-Quero Tech | © Copyright 2021
+        </p>
+    </footer>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/header-dropdown.js"></script>
+</body>
+
+</html>
